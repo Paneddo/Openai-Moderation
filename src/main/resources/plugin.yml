@@ -1,4 +1,6 @@
 name: OpenaiModeration
+author: Paneddo
+description: Chat Moderation plugin based on OpenAI
 version: '${project.version}'
 main: it.paneddo.openaimoderation.OpenaiModeration
 api-version: 1.19
