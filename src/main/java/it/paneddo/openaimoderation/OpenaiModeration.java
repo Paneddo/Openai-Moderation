@@ -20,7 +20,7 @@ public final class OpenaiModeration extends JavaPlugin {
         this.saveConfig();
         configManager = new ConfigManager(this);
 
-        if (configManager.getOpenaiKey().equals("")) {
+        if (!configManager.getOpenaiKey().startsWith("sk-")) {
             this.getLogger().warning(ChatUtils.KEY_NOT_SET);
             this.setEnabled(false);
             return;
