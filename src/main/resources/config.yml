@@ -1,0 +1,5 @@
+openai:
+  # Get Your key at https://beta.openai.com/account/api-keys
+  key: ''
+  # stable or latest
+  model: latest

@@ -1,0 +1,4 @@
+name: OpenaiModeration
+version: '${project.version}'
+main: it.paneddo.openaimoderation.OpenaiModeration
+api-version: 1.19
