@@ -6,7 +6,7 @@
 - OpenAI API key, you can get yours for free [here](https://beta.openai.com/account/api-keys)
 
 Once you got your api key place that into the config.yml file,
-witouth a valid api key the plugin won't enable.
+without a valid api key the plugin won't enable.
 
 ### OpenAI API Moderation Endpoint 🛡️
 This plugin uses the [moderation endpoint](https://beta.openai.com/docs/guides/moderation/overview)
