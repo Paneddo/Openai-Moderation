@@ -2,4 +2,23 @@ openai:
   # Get Your key at https://beta.openai.com/account/api-keys
   key: ''
   # stable or latest
-  model: latest
+  model: stable
+
+moderation:
+  # Set individual thresholds for each category of moderation the model supports (0.0 -> 1.0)
+  category-thresholds:
+    hate: 0.99
+    hateThreatening: 0.99
+    selfHarm: 0.99
+    sexual: 0.99
+    sexualMinors: 0.99
+    violence: 0.99
+    violenceGraphic: 0.99
+
+  # Commands to run when the thresholds are passed
+  #
+  # %player% -> player username
+  # %category% -> category of speech flagged
+  # %certainty% -> certainty in percentage
+  command-actions:
+    - "mute %player% Flagged for %category% (%certainty%)"
